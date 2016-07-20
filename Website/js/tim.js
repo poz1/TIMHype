@@ -455,6 +455,8 @@ function getHighlightsMenu(id){
 
         success: function (response) {
            $(".highlights-menu").html(response);
+           $("#Index").attr("href", "assistance_services_highlights.html");
+           $("#Index").text("All Highlights");
         },
 
         error: function (request, error) {
@@ -610,8 +612,9 @@ function getPromotionMenu(id, item) {
         url: "php/promotion.php",
 
         success: function (response) {
-            console.log(response);
            $(".promotion-menu").html(response);
+           $("#Index").attr("href", "promotion.html");
+           $("#Index").text("All Promotions");
         },
 
         error: function (request, error) {
