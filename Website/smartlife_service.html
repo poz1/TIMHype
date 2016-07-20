@@ -1,0 +1,39 @@
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/tim.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/tim.css" type="text/css">
+
+<div id="header"></div>
+
+<div class="main realsize">
+    <div class="container realsize" id="content">
+    <h1  class="content-title">Smart Life Service</h1>
+        <div class="sidebar realsize" id="Sidebar">
+            <div class="navigation">
+                <div class="devices-filter-title-box device-detail-first">
+                    <h4 class="devices-filter-title"><a class="devices-filter-title" href="all_smartlife_services.html">All Smart Life Services</a></h4>
+                </div>
+            </div>
+            <div class="promotion-menu"></div>
+            <div class="navigation smartlife-associated-devices">
+                <div class="devices-filter-title-box device-detail-first">
+                    <h4 class="devices-filter-title"><a href="#" class="devices-filter-title" onclick="navigateToDevicesForSmartLifeService(getParameters()['Id'])">Associated Devices</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="content-container realsize" id="Content"></div>
+    </div>
+</div>
+
+<script>
+    getHeader();          
+    getSmartLifeServiceFromDB(getParameters()['Id']);
+    
+    if(getParameters()['Promotion'] == 1)
+            getPromotionMenu(getParameters()['Id'], "SmartLifeService");
+
+</script>
+
+<footer class="footer"></footer>
+</body>
+
+</html>

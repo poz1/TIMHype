@@ -1,0 +1,62 @@
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/tim.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/tim.css" type="text/css">
+
+<div id="header"></div>
+
+<div class="main realsize">
+    <div class="container realsize" id="content">
+        <h1 class="content-title">Device</h1>
+
+        <div class="devices-filter-box">
+            <div class="devices-sidebar realsize">
+
+                <div class="navigation devices-filter-first">
+                    <div class="devices-filter-title-box" id="CategoriesFilter">
+                        <h4 class="devices-filter-title">Categories of devices</h4>
+                    </div>
+                    <div class="devices-filter-categories-main-box">
+                        <p class="devices-filter-category-description devices-filter-category-description-active"><a href="#" id="AllCategories">All Categories</a></p>
+                        <div class="devices-filter-categories-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation devices-filter">
+                <div class="devices-filter-title-box" id="BrandFilter">
+                    <h4 class="devices-filter-title">Brand</h4>
+                </div>
+                <div class="devices-filter-fields-box" id="BradFilterItems"></div>
+            </div>
+
+            <div class="navigation devices-filter">
+                <div class="devices-filter-title-box" id="PriceFilter">
+                    <h4 class="devices-filter-title">Price</h4>
+                </div>
+                <div class="devices-filter-fields-box-slider-container" id="PriceFilterItems">
+                    <div class="devices-filter-fields-box-slider">
+                        <output class="devices-filter-checkbox-description" id="MinOutput">Min: 0 €</output>
+                        <input type="range" class="devices-filter-range" min="0" max="1000" value="0" id="MinInput" oninput="MinOutput.value ='Min: ' + MinInput.value + ' €'; getDevicesFromDB();" />
+                    </div>
+                    <div class="devices-filter-fields-box-slider">
+                        <output class="devices-filter-checkbox-description" id="MaxOutput" onchange="getDevicesFromDB()">Max: 1000 €</output>
+                        <input type="range" class="devices-filter-range" min="0" max="1000" value="1000" id="MaxInput" oninput="MaxOutput.value ='Max: ' + MaxInput.value + ' €'; getDevicesFromDB();" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="devices-device-list"></div>
+
+        <script>
+            getHeader("device");
+            getCategoriesBrandsDevicesFromDB();
+        </script>
+
+    </div>
+</div>
+
+<footer class="footer"></footer>
+</body>
+
+</html>

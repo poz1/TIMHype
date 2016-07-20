@@ -1,0 +1,1036 @@
+html {
+        position: relative;
+        min-height: 100%;
+}
+
+.header {
+        background-color: #083D86;
+}
+
+.container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.realsize {
+        overflow: hidden;
+}
+
+.upper-header {
+        border-bottom: 5px solid #FE000D;
+        padding-top: 15px;
+        padding-bottom: 15px;
+}
+
+.logo {
+        float: left;
+        width: 100px;
+}
+
+.mobile-menu {
+        float: right;
+        display: none;
+}
+
+.mobile-menu-panel {
+        background-color: #FFF;
+        z-index: 10;
+        overflow: hidden;
+}
+
+.lower-header {
+        background-color: #FFF;
+        border-bottom: 1px solid #D0D0D0;
+}
+
+.menu {
+        display: block;
+        clear: both;
+}
+
+.menu-list {
+        padding-left: 0px;
+        display: table;
+        width: 100%;
+        list-style-type: none;
+}
+
+.horizontal {
+        display: table-cell;
+        text-align: center;
+}
+
+.dropdown {
+        text-align: left;
+        display: table;
+        padding-top: 15px;
+        padding-bottom: 15px;
+}
+
+.dropdown-menu {
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        min-width: 200px;
+        margin: 2px 0 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        background-clip: padding-box;
+}
+
+.dropdown-item:hover .dropdown-menu {
+        display: block;
+}
+
+.menu-item:first-child {
+        text-align: left;
+}
+
+.menu-item:last-child {
+        text-align: right;
+}
+
+.menu-item>a {
+        color: #083D86;
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+}
+
+.menu-item>a:hover {
+        color: #FE000D;
+}
+
+.menu-item-active>a {
+        color: #FE000D;
+}
+
+body {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-bottom: 100px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+}
+
+.main {
+        clear: both;
+        padding-top: 30px;
+        padding-bottom: 30px;
+}
+
+.main-home {
+        clear: both;
+        padding-bottom: 30px;
+}
+
+.home-main-box {
+        padding: 30px;
+        background: url(../images/header.jpg) top no-repeat;
+}
+
+.home-logo {
+        float: right;
+        width: 100px;
+        margin-right: 10px;
+}
+
+.home-main-title {
+        font-size: 60px;
+        margin-top: 0px;
+        color: #FFF;
+}
+
+.home-main-subtitle {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #FFF;
+        margin-bottom: 0px;
+}
+
+.home-detail-box {
+        margin-top: 40px;
+}
+
+.home-detail-title {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 0px;
+}
+
+.sidebar {
+        width: 20%;
+        float: left;
+}
+
+.orientation-info {
+        margin-bottom: 5px;
+        color: #083D86;
+        text-transform: uppercase;
+}
+
+.navigation {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+
+.navigation-menu {
+        margin: 0px;
+}
+
+.navigation-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 5px;
+}
+
+.navigation-item-active {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 5px;
+}
+
+.navigation-item:last-child {
+        margin-bottom: 0px;
+}
+
+.navigation-item:hover {
+        background-color: #FE000D;
+}
+
+.navigation-item:hover a {
+        color: #FFF;
+}
+
+.navigation-item-active {
+        background-color: #FE000D;
+}
+
+.navigation-item-active>a {
+        color: #FFF;
+}
+
+.navigation-item>a {
+        color: #083D86;
+}
+
+.navigation-item>a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+}
+
+.navigation-item-active>a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+}
+
+.content {
+        width: 80%;
+        float: right;
+}
+
+.content-container {
+        padding-left: 50px;
+}
+
+.footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: #083D86;
+        border-top: 5px solid #FE000D;
+        height: 100px;
+}
+
+
+/* Innovation Page */
+
+.content-title {
+        margin-top: 0px;
+        color: #083D86;
+}
+
+.content-subtitle {
+        margin-top: 10px;
+        color: #083D86;
+}
+
+.content-text {
+        text-align: justify;
+}
+
+
+/* Testimonials Page */
+
+.testimonial-box {
+        padding: 20px;
+}
+
+.testimonial-image {
+        float: left;
+        width: 20%;
+        border-radius: 999em;
+}
+
+.testimonial-text {
+        float: right;
+        width: 80%;
+}
+
+.testimonial-title {
+        padding-left: 20px;
+        margin-top: 0px;
+        text-transform: uppercase;
+        font-size: 20px;
+}
+
+.testimonial-quote {
+        padding-left: 20px;
+}
+
+
+/* Project Page */
+
+.project-box {
+        clear: both;
+        padding-top: 30px;
+}
+
+.project-description {
+        float: left;
+        width: 65%;
+        margin-right: 10px;
+}
+
+.project-image {
+        float: right;
+        width: 30%;
+        border-radius: 999em;
+        -moz-border-radius: 999em;
+        -webkit-border-radius: 999em;
+        -o-border-radius: 999em;
+}
+
+.innovation-image {
+        float: right;
+        width: 100%;
+}
+
+
+/*The group*/
+
+
+/*Description*/
+
+.the-group-description-text {
+        float: left;
+        width: 60%;
+        margin-top: 0px;
+}
+
+.the-group-description-video-box {
+        float: right;
+        width: 40%;
+}
+
+.the-group-description-video {
+        width: 90%;
+        float: right;
+}
+
+
+/*News*/
+
+.the-group-news-box {
+        padding-top: 30px;
+}
+
+
+/*Governance*/
+
+.the-group-governance-image {
+        width: 100%;
+}
+
+
+/*Business&Market*/
+
+.the-group-businessmarket-text {
+        width: 60%;
+        float: left;
+}
+
+.the-group-businessmarket-image {
+        width: 35%;
+        float: right;
+}
+
+
+/*ForInvestors*/
+
+.the-group-forinvestors-slidebox {
+        width: 100%;
+        height: 600px;
+        border: 0px;
+}
+
+
+/*Devices*/
+
+.devices-filter-box {
+        width: 25%;
+        float: left;
+}
+
+.devices-device-list {
+        width: 75%;
+        float: right;
+}
+
+.devices-device-box {
+        width: 47%;
+        float: left;
+        padding: 10px;
+}
+
+.devices-device-inside-box {
+        border: 1px solid #CCC;
+        margin: -1px;
+        padding: 10px;
+}
+
+.devices-device-image {
+        width: 41%;
+        float: left;
+}
+
+.devices-device-description {
+        width: 55%;
+        float: right;
+}
+
+.devices-device-title {
+        margin-bottom: 0px;
+}
+
+.devices-device-category {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 0px;
+}
+
+.devices-device-title-category-box {
+        height: 80px;
+}
+
+.devices-device-content-text {
+        text-align: justify;
+        margin-top: 0px;
+}
+
+.devices-device-more-info-button {
+        background-color: #083D86;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        margin-top: 0px;
+        border: 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 100%;
+        text-transform: uppercase;
+}
+
+.devices-device-more-info-button:hover {
+        background-color: #FE000D;
+}
+
+.devices-filter-title-box {
+        background-color: #FE000D;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 5px;
+}
+
+.devices-filter-title {
+        margin: 0px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #FFF;
+}
+
+.devices-filter-checkbox-description {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 10px;
+}
+
+.devices-filter-checkbox-description>a {
+        text-decoration: none;
+        color: black;
+}
+
+.devices-filter-category-description {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 10px;
+}
+
+.devices-filter-category-description>a {
+        text-decoration: none;
+        color: black;
+}
+
+.devices-filter-category-description-active {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding-left: 10px;
+}
+
+.devices-filter-category-description-active>a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #083D86;
+}
+
+.devices-filter-checkbox {
+        vertical-align: text-bottom;
+        margin-right: 10px;
+}
+
+.devices-filter-fields-box-slider-container {
+        padding: 10px;
+}
+
+.devices-filter-fields-box-slider {
+        text-align: center;
+}
+
+.devices-filter-range {
+        width: 80%;
+        padding: 10px;
+}
+
+.devices-filter {
+        margin-top: 20px;
+}
+
+.devices-filter-first {
+        margin-top: 9px;
+}
+
+
+/*DeviceDetail*/
+
+.devices-device-detail-image {
+        width: 40%;
+        float: left;
+}
+
+.devices-device-detail-description {
+        width: 55%;
+        float: right;
+}
+
+.devices-device-detail-techspec {
+        clear: both;
+        padding-top: 20px;
+        widows: 100%;
+}
+
+.devices-device-detail-buy-button {
+        background-color: #083D86;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        margin-top: 20px;
+        border: 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 100%;
+}
+
+.devices-device-detail-buy-button:hover {
+        background-color: #FE000D;
+}
+
+.device-detail-first {
+        margin-bottom: 0px;
+}
+
+.device-detail-field {
+        color: #083D86;
+        text-transform: uppercase;
+        float: left;
+        margin-right: 10px;
+}
+
+.device-detail-field-item {
+        text-transform: uppercase;
+}
+
+.device-detail-field-box {
+        display: flex;
+}
+
+
+/*AssistanceServices*/
+
+.assistance-services-categories-box {
+        padding: 10px;
+        padding-left: 2px;
+}
+
+.assistance-services-categories-inside-box {
+        border: 2px solid #083D86;
+        border-radius: 5px;
+        margin: -2px;
+}
+
+.assistance-services-categories-inside-box-active {
+        border: 2px solid #FE000D;
+        border-radius: 5px;
+        margin: -2px;
+}
+
+.assistance-services-content-text {
+        text-align: justify;
+}
+
+.assistance-service-abstract {
+        text-align: justify;
+        margin-top: 0px;
+        padding-bottom: 10px;
+}
+
+.assistance-services-categories-inside-box:hover {
+        border: 2px solid #FE000D;
+        border-radius: 5px;
+        margin: -2px;
+}
+
+.assistance-services-categories-image {
+        width: 10%;
+        padding-left: 5px;
+        vertical-align: central;
+        float: left;
+}
+
+.assistance-services-categories-description {
+        float: left;
+        width: 70%;
+        padding-left: 5px;
+}
+
+.assistance-services-list-box {
+        width: 75%;
+        float: right;
+}
+
+.assistance-service-filter-title-box {
+        background-color: #FE000D;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 5px;
+}
+
+.assistance-service-filter-title {
+        margin: 0px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #FFF;
+}
+
+.assistance-services-categories-detail-container-box {
+        padding: 20px;
+        padding-top: 8px;
+}
+
+.assistance-services-filter-box {
+        width: 25%;
+        float: left;
+        margin-top: 8px;
+}
+
+.assistance-services-detail-field {
+        color: #083D86;
+        text-transform: uppercase;
+        margin-right: 10px;
+        margin-top: 0px;
+}
+
+.assistance-service-detail-image {
+        width: 41%;
+        float: left;
+}
+
+.assistance-service-form-field-title{
+        margin-bottom: 0px;
+}
+
+.assistance-service-form-field-entry{
+        width: 100%;
+}
+
+.assistance-service-form-button {
+        background-color: #083D86;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        margin-bottom: 10px;
+        border: 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: bottom;
+}
+
+.assistance-service-form-button:hover {
+    background-color: #FE000D;
+}
+
+/*Highlights*/
+
+.assistance-services-categories-fulllist-box {
+        width: 100%;
+}
+
+.assistance-services-categories-image-highlights {
+        width: 20%;
+        padding-left: 5px;
+        padding-top: 20px;
+        vertical-align: central;
+        float: left;
+}
+
+.assistance-services-categories-description-highlights {
+        float: right;
+        width: 70%;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+}
+
+.highlights-menu {
+        margin-top: 20px;
+}
+
+
+/*Promotions*/
+
+.promotions-list {
+        width: 100%;
+        padding: 10px;
+}
+
+.promotion-box {
+        width: 45%;
+        float: left;
+        padding: 10px;
+}
+
+.promotion-inside-box {
+        border: 1px solid #CCC;
+        margin: -1px;
+        padding: 10px;
+}
+
+.promotion-content-title {
+        margin-top: 0px;
+        color: #083D86;
+        text-align: center;
+}
+
+.promotion-content-text {
+        height: 80px;
+}
+
+.promotion-menu{
+        margin-top: 20px;
+}
+
+/*Smart Life*/
+
+.smartlife-associated-devices{
+        margin-top: 20px;
+}
+.smartlife-more-info-button {
+        background-color: #083D86;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        margin-bottom: 10px;
+        border: 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 70%;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: bottom;
+}
+
+button.smartlife-more-info-button:hover {
+        background-color: #FE000D;
+}
+
+.smartlife-content-text {
+        text-align: justify;
+        margin-right: 10px;
+}
+
+.smartlife-services-categories-image {
+        width: 23%;
+        padding-left: 5px;
+        margin-top: 10px;
+        vertical-align: central;
+        float: left;
+}
+
+.smartlife-filter{
+        margin-top: 8px;
+}
+
+/*SLDetail*/
+
+.sl-detail-image {
+        width: 40%;
+        float: left;
+}
+
+.sl-detail-description {
+        width: 55%;
+        float: right;
+}
+
+.sl-detail-techspec {
+        clear: both;
+        padding-top: 20px;
+        widows: 100%;
+}
+
+.sl-detail-buy-button {
+        background-color: #083D86;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        margin-top: 20px;
+        border: 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 100%;
+}
+
+.sl-detail-buy-button:hover {
+        background-color: #FE000D;
+}
+
+.sl-first {
+        margin-bottom: 0px;
+}
+
+.sl-field {
+        color: #083D86;
+        text-transform: uppercase;
+        float: left;
+        margin-right: 10px;
+}
+
+.sl-field-item {
+        float: left;
+}
+
+.showdata {
+        float: left;
+}
+
+.sidebar-margin-top{
+        margin-top: 10px;
+}
+
+@media (max-width: 1023px) {
+        .mobile-menu {
+                display: block;
+        }
+        .upper-header {
+                padding-left: 20px;
+                padding-right: 20px;
+        }
+        .lower-header {
+                display: none;
+        }
+        .home-detail-box {
+                padding-left: 20px;
+                padding-right: 20px;
+        }
+        .horizontal {
+                display: block;
+                text-align: left;
+                padding-left: 20px;
+                margin-bottom: 10px;
+        }
+        .menu-item:last-child {
+                text-align: left;
+        }
+        .content-title {
+                padding-top: 20px;
+                margin-bottom: 0px;
+        }
+        .sidebar {
+                float: inherit;
+                width: 100%;
+        }
+        .content {
+                float: inherit;
+                width: 100%;
+        }
+        .content-container {
+                padding-left: 0px;
+        }
+        .main {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 0px;
+        }
+        .testimonial-box {
+                padding: 0px;
+        }
+        .testimonial-title {
+                padding-top: 20px;
+        }
+        .testimonial-image {
+                float: inherit;
+                width: 80%;
+                max-width: 400px;
+                padding-top: 40px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        .testimonial-text {
+                float: inherit;
+                width: 100%;
+        }
+        .project-image {
+                float: inherit;
+                width: 80%;
+                max-width: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        .project-description {
+                float: inherit;
+                width: 100%;
+                margin-bottom: 40px;
+        }
+        .the-group-description-text {
+                width: 100%;
+                float: inherit;
+        }
+        .the-group-description-video-box {
+                width: 100%;
+        }
+        .the-group-description-video {
+                width: 100%;
+                float: inherit;
+                min-height: 220px;
+        }
+        .the-group-businessmarket-text {
+                width: 100%;
+                float: inherit;
+        }
+        .the-group-businessmarket-image {
+                width: 100%;
+                float: inherit;
+        }
+}
+
+@media (max-width: 767px) {
+
+        #Sidebar {
+                padding-top: 40px;
+        }
+        .devices-filter-box {
+                width: 100%;
+                float: inherit;
+        }
+        .devices-device-box {
+                width: initial;
+                float: inherit;
+        }
+        .devices-device-list {
+                width: 100%;
+                float: inherit;
+        }
+        .devices-filter-categories-main-box {
+                display: none;
+        }
+        .devices-filter-fields-box {
+                display: none;
+        }
+        .devices-filter-fields-box-slider-container {
+                display: none;
+        }
+        .promotion-box {
+                width: initial;
+                float: inherit;
+        }
+        .assistance-services-filter-box {
+                width: 100%;
+                float: inherit;
+        }
+        .assistance-services-list-box {
+                width: 100%;
+                float: inherit;
+        }
+        .devices-device-detail-image {
+                max-width: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                float: inherit;
+                padding-bottom: 20px;
+                max-height: 300px;
+        }
+        .devices-device-detail-description {
+                width: 100%;
+                float: inherit;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+        .devices-device-box {
+                width: 45%;
+        }
+        .promotion-box {
+                width: 45%;
+        }
+}
+
+.visible {
+        display: block;
+}

@@ -1,0 +1,39 @@
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/tim.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/tim.css" type="text/css">
+
+<div id="header"></div>
+
+
+<div class="main realsize">
+    <div class="container realsize" id="content">
+
+        <h1 class="content-title">Assistance Services</h1>
+
+        <div class="assistance-services-filter-box" id="CategoriesFilter">
+            <div class="navigation assistance-services-detail">
+                <div class="assistance-service-filter-title-box">
+                    <h4 class="assistance-service-filter-title">Assistance Services</h4>
+                </div>
+                <div class="devices-filter-categories-main-box">
+                    <div class="devices-filter-categories-main-box">
+                        <p class="devices-filter-category-description devices-filter-category-description-active"><a href="" id="0">All Categories</a></p>
+                        <div class="assistance-service-filter-fields-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="assistance-services-list-box"></div>
+
+        <script>
+            getHeader("assistance-services");
+            getAssistanceServicesCategoriesFromDB();
+        </script>
+
+    </div>
+</div>
+
+<footer class="footer"></footer>
+</body>
+
+</html>

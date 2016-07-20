@@ -1,0 +1,53 @@
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/tim.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/tim.css" type="text/css">
+
+<div id="header"></div>
+
+<div class="main realsize">
+
+    <div class="container realsize" id="content">
+          <h1 class="content-title">Device</h1>
+        <div class="sidebar realsize" id="Sidebar">
+            <div class="navigation">
+                <div class="devices-filter-title-box  device-detail-first">
+                    <h4 class="devices-filter-title"><a class="devices-filter-title" href="all_devices.html">All Devices</a></h4>
+                </div>
+            </div>
+            <div class="promotion-menu"></div>
+            <div class="connected-services">
+                <div class="navigation devices-filter">
+        		  	<div class="devices-filter-title-box" id="AssistanceServicesTitle">
+            			<h4 class="devices-filter-title">Assistance Services</h4>
+        			</div>
+        			<div class="devices-filter-fields-box" id="AssistanceServices"></div>
+                </div>
+                <div class="navigation devices-filter">
+                    <div class="devices-filter-title-box" id="SmartLifeServicesTitle">
+                        <h4 class="devices-filter-title">SmartLife Services</h4>
+                    </div>
+                    <div class="devices-filter-fields-box" id="SmartLifeServices"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content realsize" id="deviceDetail">
+            <div class="content-container"></div>
+        </div>
+        
+        <script>
+            getHeader("device");
+        </script>
+
+    </div>
+</div>
+<script>
+    getDeviceFromDB(getParameters()['Id']);
+    
+    if(getParameters()['Promotion'] == 1)
+        getPromotionMenu(getParameters()['Id'], "Device");
+</script>
+
+<footer class="footer"></footer>
+</body>
+
+</html>
